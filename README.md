@@ -139,23 +139,23 @@ fprintf('Saved figures: A5_pz.png, A5_freq.png, A5_input.png, A5_output.png\n');
 ![image](https://github.com/Khan548-codes/week3-Z-transform/blob/main/images/s3.png)
 ![image](https://github.com/Khan548-codes/week3-Z-transform/blob/main/images/s4.png)
 
-# A1 – Finite Sequences to Polynomials
+A1 – Finite Sequences to Polynomials
 
 Plots: There are no real plots here, just polynomials. Each sequence turns into a polynomial in 
 𝑧^−1 where the numbers in the sequence are just the coefficients.
 
-# Reflection: I learned that any finite sequence can be written as a short polynomial in 
+Reflection: I learned that any finite sequence can be written as a short polynomial in 
 𝑧^−1
 . It was interesting to see how each term in the sequence matches directly with a power of z^−1
 . The ROC is simple for these because the sequences end after a few samples.
 
 
 
-# A2 – Infinite Sequences and ROC
+A2 – Infinite Sequences and ROC
 
-# Plots: If we plotted them, the first one would look like a decaying exponential, the second one like a decaying exponential that flips sign every step, and the third one would be a left-sided sequence that grows backwards.
+Plots: If we plotted them, the first one would look like a decaying exponential, the second one like a decaying exponential that flips sign every step, and the third one would be a left-sided sequence that grows backwards.
 
-# Reflection: I noticed the ROC is very important. For right-sided signals the ROC is outside the pole, but for left-sided ones it is inside. It made sense after checking the definitions. Also, the alternating sign in the second case makes the plot go up and down.
+Reflection: I noticed the ROC is very important. For right-sided signals the ROC is outside the pole, but for left-sided ones it is inside. It made sense after checking the definitions. Also, the alternating sign in the second case makes the plot go up and down.
 
 
 
