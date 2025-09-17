@@ -134,4 +134,53 @@ fprintf('A4: 1/(1-0.7 z^{-1}) -> 0.7^n u[n].  (1-0.5 z^{-1})/(1-0.8 z^{-1}) -> 0
 fprintf('A5: Poles: '); disp(poles_H.'); fprintf('Zeros: '); disp(zeros_H.');
 fprintf('Saved figures: A5_pz.png, A5_freq.png, A5_input.png, A5_output.png\n');
 
-[!image]()
+![image](https://github.com/Khan548-codes/week3-Z-transform/blob/main/images/s1.png)
+![image](https://github.com/Khan548-codes/week3-Z-transform/blob/main/images/s2.png)
+![image](https://github.com/Khan548-codes/week3-Z-transform/blob/main/images/s3.png)
+![image](https://github.com/Khan548-codes/week3-Z-transform/blob/main/images/s4.png)
+
+# A1 – Finite Sequences to Polynomials
+
+Plots: There are no real plots here, just polynomials. Each sequence turns into a polynomial in 
+𝑧^−1 where the numbers in the sequence are just the coefficients.
+
+# Reflection: I learned that any finite sequence can be written as a short polynomial in 
+𝑧^−1
+. It was interesting to see how each term in the sequence matches directly with a power of z^−1
+. The ROC is simple for these because the sequences end after a few samples.
+
+
+
+# A2 – Infinite Sequences and ROC
+
+# Plots: If we plotted them, the first one would look like a decaying exponential, the second one like a decaying exponential that flips sign every step, and the third one would be a left-sided sequence that grows backwards.
+
+# Reflection: I noticed the ROC is very important. For right-sided signals the ROC is outside the pole, but for left-sided ones it is inside. It made sense after checking the definitions. Also, the alternating sign in the second case makes the plot go up and down.
+
+
+
+
+# A3 – Linearity and Shifting
+•	# Plots: If plotted, the exponentials just combine into another signal, and shifting makes the signal start later (it is zero until the shift).
+•	Reflection: I understood how linearity makes things easy: you can just take the Z-transform of each part and add them. Time-shifting is also clear because it just adds a factor of z^-k. I also saw that the ROC stays the same when signals are shifted.
+
+
+
+
+
+# A4 – Inverse Z-Transform
+•	Plots: The first inverse gives a decaying exponential, while the second one has a spike at n=0 and then an exponential tail.
+•	Reflection: I learned how to go back from X(z)to x[n]. The method with partial fractions or inspection shows where the impulse or exponential terms come from. It was nice to see how the poles decide the behavior of the sequence.
+
+
+
+
+# A5 – H(z), Poles/Zeros and Frequency Response
+•	Plots:
+o	The pole-zero plot shows poles inside the unit circle and zeros outside.
+o	The magnitude plot has a peak around 0.35π.
+o	The phase plot changes smoothly with frequency.
+o	The input signal has two sinusoids, but the output mainly keeps the low-frequency part because of the filter.
+•	Reflection: I noticed how the poles close to the unit circle make a resonance in the frequency response. The filter is stable because the poles are inside the unit circle, but it is not minimum phase because some zeros are outside. The time-domain test showed how the filter really amplifies one frequency and reduces the other.
+
+
